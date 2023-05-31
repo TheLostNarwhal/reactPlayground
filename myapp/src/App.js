@@ -1,16 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 
 
-
+function  TranslateButton(){
+    // this will be used to translate from english to spanish and vise versa
+    // toggle button preferred 
+}
 
 function NavBar (){
     return (
         <div className='navbar'>
-            <a href='https://www.google.com'>Home </a>
+            <a href='http://localhost:3000/#React'>Home </a>
             <a href='https://www.google.com'>Projects </a>
             <a href='https://www.google.com'>Contact </a>
+            {/* <TranslateButton /> */}
 
         </div>
     )
@@ -34,30 +38,44 @@ function Hero () {
             </div>
         </div>
     );
+}
+
+function Badges (){
+    return(
+        <div className='badgeContainer'>
+            <div className='badgeTitle'>
+                <h3>Badges</h3>
+            </div>
+            <div className='badgeIcons'></div>
+            {/* source for badages : <a href="https://icons8.com">Icons8</a> https://icons8.com/icon/set/logos/dusk */}
+            <img width="64" height="64" src="https://img.icons8.com/dusk/64/html-5.png" alt="html-5"/>
+            <img width="64" height="64" src="https://img.icons8.com/dusk/64/css3.png" alt="css3"/>
+            <img width="64" height="64" src="https://img.icons8.com/dusk/64/javascript-logo.png" alt="javascript-logo"/>
+            <img width="64" height="64" src="https://img.icons8.com/dusk/64/react.png" alt="react"/>
+            <img width="64" height="64" src="https://img.icons8.com/ios/50/8D6C9F/angularjs.png" alt="angularjs"/>
+            <img width="64" height="64" src="https://img.icons8.com/dusk/64/java-coffee-cup-logo.png" alt="java-coffee-cup-logo"/>
+            <img width="64" height="64" src="https://img.icons8.com/dusk/64/python.png" alt="python"/>
+            <img width="64" height="64" src="https://img.icons8.com/dusk/64/github.png" alt="github"/>
+            
+        </div>
+    );
+}
         
     
 
-}
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+        <header className='App-header'>
         <NavBar />
-        <Hero />
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        </header>
+      <body className="App-body">
+      <Hero />
+      <Badges />
+      </body>
+      
     </div>
   );
 }

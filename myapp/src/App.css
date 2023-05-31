@@ -1,9 +1,67 @@
-.App {text-align: center;}
-.App-logo {animation: App-logo-spin infinite 20s linear;height: 40vmin;}
-.App-header {background-color: #282c34;min-height: 100vh;display: flex;flex-direction: column;align-items: center;justify-content: center;font-size: calc(10px + 2vmin);color: white;}
-.App-link {color: #61dafb;}@keyframes App-logo-spin {from {transform: rotate(0deg);}to {transform: rotate(360deg);}}
 
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+
+
+.App {text-align: center;
+  font-family: 'Red Hat Display', sans-serif;
+
+
+}
+
+.App-header {
+  background-color: #E9D8A6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-body {background-color: #E9D8A6;min-height: 100vh;display: flex;
+  flex-direction: column;align-items: center;font-size: calc(10px + 2vmin);color: white;
+ 
+
+}
+
+
+
+
+
+
+/* nav bar style start*/
+.navbar {
+  display: flex;
+  background-color: #0A9396;
+  width: 90%;
+  justify-content: flex-end;
+  margin-top: 20px;
+
+}
+
+
+
+
+/*hero container start
+  -remove border */
+.heroContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid black;
+}
+
+.heroInfo {
+  border: 1px solid black;
+  
+}
+.heroImageContainer {
+  border: 1px solid black;
+}
 
 .heroImage {
   border-radius: 70px;
 }
+/*hero container end */
+
+
