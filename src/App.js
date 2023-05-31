@@ -56,7 +56,6 @@ function Badges (){
             <img width="64" height="64" src="https://img.icons8.com/dusk/64/java-coffee-cup-logo.png" alt="java-coffee-cup-logo"/>
             <img width="64" height="64" src="https://img.icons8.com/dusk/64/python.png" alt="python"/>
             <img width="64" height="64" src="https://img.icons8.com/dusk/64/github.png" alt="github"/>
-            
         </div>
     );
 }
